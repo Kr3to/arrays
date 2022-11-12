@@ -40,3 +40,52 @@ for(int i=1; i<arr.Length; i++){
 
 Console.WriteLine("Min value: " + min); */
 
+/* 3. max value + count 
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+int max = arr[0];
+int count = 1;
+
+for(int i=1; i<arr.Length; i++){
+    if(arr[i] > max){
+        max = arr[i];
+        count = 1;
+    } else if(arr[i] == max){
+        count++;
+    }
+}
+
+Console.WriteLine("Max value: " + max);
+Console.WriteLine("Repeated: " + count + " times"); */
+
+/* 4. min value + count 
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+int min = arr[0];
+int count = 1;
+
+for(int i=1; i<arr.Length; i++){
+    if(arr[i] < min){
+        min = arr[i];
+        count = 1;
+    } else if(arr[i] == min){
+        count++;
+    }
+}
+
+Console.WriteLine("Min value: " + min);
+Console.WriteLine("Repeated: " + count + " times"); */
