@@ -111,3 +111,27 @@ for(int i=1; i<arr.Length; i++){
 }
 
 Console.WriteLine("Second max value: " + second); */
+
+/* 6. second min value
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+int min = arr[0];
+int second = 0;
+
+for(int i=1; i<arr.Length; i++){
+    if(arr[i] < min){
+        second = min;
+        min = arr[i];
+    } 
+}
+
+Console.WriteLine("Second min value: " + second); */
+
+
