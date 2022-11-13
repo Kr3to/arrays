@@ -89,3 +89,25 @@ for(int i=1; i<arr.Length; i++){
 
 Console.WriteLine("Min value: " + min);
 Console.WriteLine("Repeated: " + count + " times"); */
+
+/* 5. second max value
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+int max = arr[0];
+int second = 0;
+
+for(int i=1; i<arr.Length; i++){
+    if(arr[i] > max){
+        second = max;
+        max = arr[i];
+    } 
+}
+
+Console.WriteLine("Second max value: " + second); */
