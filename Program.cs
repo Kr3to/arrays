@@ -90,7 +90,7 @@ for(int i=1; i<arr.Length; i++){
 Console.WriteLine("Min value: " + min);
 Console.WriteLine("Repeated: " + count + " times"); */
 
-/* 5. second max value
+/* 5. ^2
 Console.WriteLine("Array length: ");
 int x = int.Parse(Console.ReadLine());
 int[] arr = new int[x];
@@ -100,19 +100,12 @@ for(int i=1; i<=x; i++){
     arr[i-1] = int.Parse(Console.ReadLine());
 }
 
-int max = arr[0];
-int second = 0;
+for(int i=0; i<arr.Length; i++){
+    arr[i] *= arr[i];
+    Console.WriteLine("square: " + arr[i]);
+} */
 
-for(int i=1; i<arr.Length; i++){
-    if(arr[i] > max){
-        second = max;
-        max = arr[i];
-    } 
-}
-
-Console.WriteLine("Second max value: " + second); */
-
-/* 6. second min value
+/* 6. ^3 
 Console.WriteLine("Array length: ");
 int x = int.Parse(Console.ReadLine());
 int[] arr = new int[x];
@@ -122,16 +115,123 @@ for(int i=1; i<=x; i++){
     arr[i-1] = int.Parse(Console.ReadLine());
 }
 
-int min = arr[0];
-int second = 0;
+for(int i=0; i<arr.Length; i++){
+    arr[i] *= arr[i] * arr[i];
+    Console.WriteLine("3rd power: " + arr[i]);
+} */
 
-for(int i=1; i<arr.Length; i++){
-    if(arr[i] < min){
-        second = min;
-        min = arr[i];
-    } 
+/* 7. +1
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
 }
 
-Console.WriteLine("Second min value: " + second); */
+for(int i=0; i<arr.Length; i++){
+    arr[i] += 1;
+    Console.WriteLine("+1: " + arr[i]);
+} */
+
+/* 8. x2
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+for(int i=0; i<arr.Length; i++){
+    arr[i] *= 2;
+    Console.WriteLine("x2: " + arr[i]);
+} */
+
+/* 9. %2==0
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+for(int i=0; i<arr.Length; i++){
+    if(arr[i]%2 == 0){
+        Console.WriteLine(arr[i]);
+    }
+} */
+
+/* 10. %2==1
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+for(int i=0; i<arr.Length; i++){
+    if(arr[i]%2 == 1){
+        Console.WriteLine(arr[i]);
+    }
+} */
+
+/* 11. %3==0
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+for(int i=0; i<arr.Length; i++){
+    if(arr[i]%3 == 0){
+        Console.WriteLine(arr[i]);
+    }
+} */
+
+/* 12. [4;15>
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+for(int i=0; i<arr.Length; i++){
+    if(arr[i] >= 4 && arr[i] < 15){
+        Console.WriteLine(arr[i]);
+    }
+} */
+
+/* 13. full odd number
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+string[] arr = new string[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = Console.ReadLine();
+}
+
+for(int i=0; i<arr.Length; i++){
+    if(arr[i].Contains("1") || arr[i].Contains("3") || arr[i].Contains("5") || arr[i].Contains("7") || arr[i].Contains("9")){
+        Console.WriteLine("Has odd");
+    } else{
+        Console.WriteLine("Full even");
+    }
+} */
+
+
 
 
