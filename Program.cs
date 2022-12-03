@@ -417,3 +417,39 @@ for(int i=0; i<x; i++){
     arr[i] = j;
     Console.WriteLine("index: " + i + " value " + arr[i]);
 } */
+
+string[] lines = System.IO.File.ReadAllLines(@"C:\Users\xxkre\OneDrive\Pulpit\pesel.txt");
+int grudzien = 0;
+int kobiet = 0;
+
+int[] arr = new int[100];
+
+for(int i=0; i<100; i++){
+    arr[i] = 0;
+}
+
+
+foreach (string line in lines)
+{
+/* if(line[2] == '1' && line[3] == '2'){
+    grudzien = grudzien + 1;
+}
+if(line[9]%2 == 0){
+    kobiet = kobiet + 1;
+} */
+
+string year = line.Substring(0, 2);
+int yr = int.Parse(year);
+arr[yr] = arr[yr] + 1;
+
+}
+
+for(int i=0; i<100; i++){
+    Console.WriteLine(arr[i]);
+}
+
+// Console.WriteLine("z grudnia osob " + grudzien);
+// Console.WriteLine("kobiet " + kobiet);
+
+
+
