@@ -105,6 +105,35 @@ for(int i=0; i<arr.Length; i++){
     Console.WriteLine("square: " + arr[i]);
 } */
 
+/* second max value test
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+int max = arr[0];
+
+for(int i=0; i<arr.Length; i++){
+    if(arr[i] > max){
+        max = arr[i];
+    }
+} 
+
+int second = 0;
+
+for(int i=0; i<arr.Length; i++){
+    if(arr[i] < max && arr[i] > second){
+        second = arr[i];
+    }
+} 
+
+Console.WriteLine("max " + max);
+Console.WriteLine("second " + second); */
+
 /* 6. ^3 
 Console.WriteLine("Array length: ");
 int x = int.Parse(Console.ReadLine());
@@ -232,6 +261,159 @@ for(int i=0; i<arr.Length; i++){
     }
 } */
 
+/* 14. even +100
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
 
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
 
+for(int i=0; i<arr.Length; i++){
+    if(arr[i]%2 == 0){
+        arr[i] = arr[i] + 100;
+    }
+    Console.WriteLine(arr[i]);
+} */
 
+/* 15. odd 0
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+for(int i=0; i<arr.Length; i++){
+    if(arr[i]%2 == 1){
+        arr[i] = 0;
+    }
+    Console.WriteLine(arr[i]);
+} */
+
+/* 16. even index
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+for(int i=0; i<arr.Length; i++){
+    if(i%2==0){
+        Console.WriteLine(arr[i]);
+    }
+} */
+
+/* 17. squared index
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=1; i<=x; i++){
+    Console.WriteLine(i + " item: ");
+    arr[i-1] = int.Parse(Console.ReadLine());
+}
+
+for(int i=1; i<arr.Length; i++){
+    i = i*i;
+    if(arr[i] != null){
+        Console.WriteLine(arr[i]);
+    }
+} */
+
+/* 18. erastotenes
+int[] arr = new int[100];
+
+for(int i=0; i< arr.Length; i++){
+    arr[i] = i;
+}
+
+for(int j=2; j< arr.Length; j++){
+    if(arr[j] == 2 || arr[j] == 3 || arr[j] == 5 || arr[j] == 7){
+        Console.WriteLine(arr[j] + " ");
+    }
+    else if(arr[j]%2 != 0 && arr[j]%3 != 0 && arr[j]%5 != 0 && arr[j]%7 != 0){
+        Console.WriteLine(arr[j] + " ");
+    } 
+} */
+
+/* 19. fibon 
+int a = 1;
+int b = 1;
+int c;
+
+for(int i=0; i < 10; i++){
+    c = a+b;
+    a = b;
+    b = c;
+    Console.WriteLine(c + " ");
+} */
+
+/*
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+
+for(int i=0; i<x; i++){
+    arr[i] = i;
+    Console.WriteLine("index: " + i + " value " + arr[i]);
+} */
+
+/*
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+int j;
+
+for(int i=0; i<x; i++){
+    j = i+7;
+    arr[i] = j;
+    Console.WriteLine("index: " + i + " value " + arr[i]);
+} */
+
+/*
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+int j;
+
+for(int i=0; i<x; i++){
+    j = 4;
+    if(i == 0){
+        arr[i] = j;
+    } else{
+        arr[i] = j * i + 4;
+    }
+    Console.WriteLine("index: " + i + " value " + arr[i]);
+} */
+
+/*
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+arr[0] = 1;
+Console.WriteLine("index: " + 0 + " value " + arr[0]);
+
+for(int i=1; i<x; i++){
+    arr[i] = arr[i - 1] * 2;
+    Console.WriteLine("index: " + i + " value " + arr[i]);
+} */
+
+/*
+Console.WriteLine("Array length: ");
+int x = int.Parse(Console.ReadLine());
+int[] arr = new int[x];
+int j;
+
+for(int i=0; i<x; i++){
+    j = i + 2;
+    arr[i] = j;
+    Console.WriteLine("index: " + i + " value " + arr[i]);
+} */
